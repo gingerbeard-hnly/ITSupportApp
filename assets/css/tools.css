@@ -1,0 +1,53 @@
+body {
+    background: #FFFFFF;
+    color:#004482;
+    font-family: 'Montserrat';
+    margin:0;
+}
+
+#title {
+  margin-left: auto;
+}
+
+strong {
+  color: #ffffff;
+}
+span {
+  color: #004482;
+  padding: 4px;
+  text-transform:uppercase;
+}
+
+.menuBar {
+  width:100%;
+  display: grid;
+  grid-template-columns: 90% auto auto;
+  align-items: center;
+  background-color: #8a8a8a;
+  -webkit-app-region: drag;
+}
+
+.mainBanner {
+  background: #004482;
+  color: #FFFFFF;
+}
+
+.tools {
+    width:100%;
+    margin-top:15px;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+
+#options_ico{
+    margin-left: 10%;
+    padding: 0 10px;
+    text-align:center;
+}
+
+
+button {
+    background:#004482;
+    color:#FFFFFF;
+}

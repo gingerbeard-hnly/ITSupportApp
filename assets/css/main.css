@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,600');
+
+body {
+    background: #004482;
+    color:#fff;
+    font-family: 'Montserrat';
+    margin:0;
+    font-weight: bold;
+    border: solid;
+    border-color: #004482;
+}
+header {
+   display: flex;
+   flex-direction: row-reverse;
+   justify-content: flex-start;
+   background: #004482;
+   color: white;
+   align-self: stretch;
+   -webkit-app-region: drag;
+}
+
+.headeroptions {
+    padding: 2px 10px;
+    font-size: 1rem;
+    -webkit-app-region: no-drag;
+    cursor: pointer;
+}
+
+.headeroptions:hover{
+  background-color: #245888;
+}
+
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: white;
+}
+
+/* selected link */
+a:active {
+  color: white;
+}
+
+#Logo{
+  width:400px;
+  height:125px;
+}
+
+.options {
+    width:100%;
+    margin-top:15px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+}
+
+.mainBanner {
+  background: #FFFFFF;
+}
+
+p {
+  text-align: center;
+}
+
+p.version{
+  color: #FFFFFF;
+  font-size: 10px;
+}
+
+p.banner {
+    margin:0;
+    padding: 20px;
+    font-weight: bold;
+    text-transform:uppercase;
+    -webkit-app-region: drag;
+}
+
+#options_ico{
+  margin-left: 10%;
+  padding: 0 10px;
+  text-align:center;
+}
+
+h1 {
+    margin: 0 0 10px 0;
+}
+
+button {
+    float:center;
+    background:#FFFFFF;
+    border:none;
+    color:#004482;
+    text-transform:uppercase;
+    padding:10px;
+    margin-right: 30px;
+    cursor:pointer;
+    width: 150px;
+    height: 60px;
+    font-weight: bold;
+}
+
+img {
+    float:center;
+    border:none;
+    padding-top: 10px;
+    margin-right: 30px;
+    cursor:pointer;
+}
