@@ -1,0 +1,42 @@
+{
+  "name": "ITSupportApp",
+  "version": "0.2.0",
+  "description": "This is the Aristocrat IT Support App",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
+    "package-win": "electron-packager . ITSupportAppv2 --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/logo.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"ITSUPPORTAPP\"",
+    "package-linux": "electron-packager . electron-tutorial-app --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/1024x1024.png --prune=true --out=release-builds"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^1.8.8"
+  },
+  "dependencies": {
+    "genversion": "^2.2.1",
+    "mousetrap": "^1.6.5",
+    "network": "^0.5.0",
+    "node-key-sender": "^1.0.11",
+    "request-country": "^0.1.5",
+    "systeminformation": "^4.25.1"
+  },
+  "build": {
+    "appId": "com.github.gingerbeard_hnly.ITSupportApp",
+    "mac": {
+      "category": "your.app.category.type",
+      "target": [
+        "zip",
+        "dmg"
+      ]
+    },
+    "nsis": {
+      "category": "your.app.category.type",
+      "target": [
+        "zip",
+        "dmg"
+      ]
+  }
+}

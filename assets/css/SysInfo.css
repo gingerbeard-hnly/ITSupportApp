@@ -1,0 +1,16 @@
+.details {
+  width: 95%;
+  display: grid;
+  grid-template-columns: 210px 350px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.info{
+  margin-left: 30px
+}
+
+button {
+    padding:10px;
+    margin-right: 0px;
+}
