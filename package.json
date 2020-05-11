@@ -22,21 +22,5 @@
     "node-key-sender": "^1.0.11",
     "request-country": "^0.1.5",
     "systeminformation": "^4.25.1"
-  },
-  "build": {
-    "appId": "com.github.gingerbeard_hnly.ITSupportApp",
-    "mac": {
-      "category": "your.app.category.type",
-      "target": [
-        "zip",
-        "dmg"
-      ]
-    },
-    "nsis": {
-      "category": "your.app.category.type",
-      "target": [
-        "zip",
-        "dmg"
-      ]
   }
 }
