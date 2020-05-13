@@ -35,8 +35,14 @@ log.info('App starting...');
   })
   autoUpdater.on('update-downloaded', (info) => {
     console.log('Update downloaded');
+    autoUpdater.quitAndInstall();
   });
 
+
+function sendStatusToWindow(text) {
+  log.info(text);
+  win.webContents.send('message', text);
+}
 
 function createWindow () {
   // Create the browser window.
@@ -51,14 +57,9 @@ function createWindow () {
     slashes: true
   }))
 
-  function sendStatusToWindow(text) {
-    log.info(text);
-    win.webContents.send('message', text);
+  if(!isDev){
+    autoUpdater.checkForUpdates();
   }
-
-
-
-
   // Open the DevTools.
   //win.webContents.openDevTools()
 
@@ -70,32 +71,6 @@ function createWindow () {
     win = null
   })
 
-/*  var menu = Menu.buildFromTemplate([
-      {
-          label: 'Menu',
-          submenu: [
-                {label: 'Adjust Notification Value'},
-                {
-                    label: 'CoinMarketCap',
-                    click() {
-                        shell.openExternal('http://coinmarketcap.com')
-                    }
-                },
-                {type: 'separator'},
-                {
-                    label: 'Exit',
-                    click() {
-                        app.quit()
-                    }
-                }
-          ]
-      },
-      {
-          label: 'Info'
-      }
-  ])
-
-  Menu.setApplicationMenu(menu);*/
 }
 
 // This method will be called when Electron has finished
@@ -115,7 +90,6 @@ app.on('window-all-closed', () => {
 app.on('activate', () => {
   // On macOS it's common to re-create a window in the app when the
   // dock icon is clicked and there are no other windows open.
-  autoUpdater.checkForUpdatesAndNotify();
   if (win === null) {
     createWindow()
   }
