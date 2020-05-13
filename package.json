@@ -7,7 +7,8 @@
     "start": "electron .",
     "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
     "package-win": "electron-packager . ITSupportAppv2 --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/logo.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"ITSUPPORTAPP\"",
-    "package-linux": "electron-packager . electron-tutorial-app --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/1024x1024.png --prune=true --out=release-builds"
+    "package-linux": "electron-packager . electron-tutorial-app --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/1024x1024.png --prune=true --out=release-builds",
+    "publish": "build -p always"
   },
   "keywords": [],
   "author": "",
@@ -16,9 +17,7 @@
     "electron": "^1.8.8"
   },
   "dependencies": {
-    "electron-builder": "^22.6.0",
     "electron-log": "^4.1.2",
-    "electron-packager": "^14.2.1",
     "electron-updater": "^4.3.1",
     "genversion": "^2.2.1",
     "mousetrap": "^1.6.5",
@@ -26,5 +25,15 @@
     "node-key-sender": "^1.0.11",
     "request-country": "^0.1.5",
     "systeminformation": "^4.25.1"
+  },
+  "build": {
+    "appId": "com.github.gingerbeard-hnly.ITSupportApp",
+    "mac": {
+      "category": "your.app.category.type",
+      "target": [
+        "zip",
+        "dmg"
+      ]
+    }
   }
 }
