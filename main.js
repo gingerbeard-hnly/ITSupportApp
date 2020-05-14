@@ -3,14 +3,15 @@ const path = require('path');
 const url = require('url');
 const shell = require('electron').shell;
 const ipc = require('electron').ipcMain;
-//const log = require('electron-log');
-//const {autoUpdater} = require('electron-updater');
+const log = require('electron-log');
+const {autoUpdater} = require('electron-updater');
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 let win
 
-/*autoUpdater.logger = log;
+
+autoUpdater.logger = log;
 autoUpdater.logger.transports.file.level = 'info';
 log.info('App starting...');
 
@@ -36,7 +37,7 @@ log.info('App starting...');
   autoUpdater.on('update-downloaded', (info) => {
     console.log('Update downloaded');
     autoUpdater.quitAndInstall();
-  });*/
+  });
 
 
 function sendStatusToWindow(text) {
@@ -57,9 +58,7 @@ function createWindow () {
     slashes: true
   }))
 
-  /*if(!isDev){
-    autoUpdater.checkForUpdates();
-  }*/
+  autoUpdater.checkForUpdates();
 
   // Open the DevTools.
   //win.webContents.openDevTools()
