@@ -5,6 +5,7 @@ const shell = require('electron').shell;
 const ipc = require('electron').ipcMain;
 const log = require('electron-log');
 const {autoUpdater} = require('electron-updater');
+const isDev = require('electron-is-dev');
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -58,8 +59,11 @@ function createWindow () {
     slashes: true
   }))
 
-  autoUpdater.checkForUpdates();
+  if(!isDev){
 
+    autoUpdater.checkForUpdates();
+  }
+  
   // Open the DevTools.
   //win.webContents.openDevTools()
 
