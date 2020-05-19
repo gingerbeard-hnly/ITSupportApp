@@ -1,6 +1,6 @@
 {
   "name": "ITSupportApp",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "This is the go to app for IT Support",
   "main": "main.js",
   "scripts": {
@@ -12,21 +12,22 @@
   },
   "keywords": [],
   "author": "Matt Hewson",
-  "license": "Aristocrat",
+  "license": "UNLICENSED",
   "devDependencies": {
-    "electron": "^8.2.5",
+    "electron": "^8.3.0",
     "electron-builder": "^22.6.0"
   },
   "dependencies": {
-    "node-key-sender": "^1.0.11",
+    "electron-is-dev": "^1.2.0",
     "electron-log": "^4.1.2",
     "electron-packager": "^14.2.1",
     "electron-updater": "^4.3.1",
     "genversion": "^2.2.1",
     "mousetrap": "^1.6.5",
     "network": "^0.5.0",
+    "node-key-sender": "^1.0.11",
     "request-country": "^0.1.5",
-    "systeminformation": "^4.26.0"
+    "systeminformation": "^4.26.1"
   },
   "build": {
     "appId": "com.github.gingerbeard-hnly.ITSupportApp",
