@@ -63,8 +63,10 @@ cmdBtn.addEventListener('click', function(event) {
 
 screenshotBtn.addEventListener('click', function(event) {
 
-    var ks = require('node-key-sender')
-    ks.sendCombination(['windows', 'shift', 's']);
+    var cp = require('child_process');
+    cp.spawn('cmd', ['/C', 'start explorer.exe ms-screenclip:']);
+    //var ks = require('node-key-sender')
+    //ks.sendCombination(['windows', 'shift', 's']);
     //externalApp(snippingtool)
     //var cp = require('child_process');
     //cp.spawn('cmd', ['/C', 'start /b /i "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Accessories\\Snipping Tool.lnk"']);

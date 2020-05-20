@@ -105,6 +105,17 @@ minBtn.addEventListener('click', function(event) {
     window.minimize()
 })
 
+notes.addEventListener('click', function(event) {
+    const modalPath = path.join('file://', __dirname, 'releasenotes.html')
+    let win = new BrowserWindow({ webPreferences: {
+                nodeIntegration: true
+            }, frame: false, width: 600, height: 400})
+    //win.webContents.openDevTools()
+    win.on('close', function() { win = null })
+    win.loadURL(modalPath)
+    win.show()
+})
+
 
 
 /*const notifyBtn = document.getElementById('notifyBtn')

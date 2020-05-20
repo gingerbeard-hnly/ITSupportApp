@@ -1,8 +1,8 @@
-version: 0.2.2
+version: 0.2.3
 files:
-  - url: ITSupportApp-Setup-0.2.2.exe
-    sha512: U4uiQr9aC77uufaBETGOO53hPUfn9kN4yT3UNyD4xfSxZLBUH7PIXTSuAvnnU3jj72rQA6ivt2Fl/v4GyafFNg==
-    size: 52955780
-path: ITSupportApp-Setup-0.2.2.exe
-sha512: U4uiQr9aC77uufaBETGOO53hPUfn9kN4yT3UNyD4xfSxZLBUH7PIXTSuAvnnU3jj72rQA6ivt2Fl/v4GyafFNg==
-releaseDate: '2020-05-15T07:47:24.110Z'
+  - url: ITSupportApp-Setup-0.2.3.exe
+    sha512: PWNFHqa4uDuzsXaMnGV/hWxYnN/KFdmh/FZAExlzWNU5uy9bTW0x9Kyd3U5sJh8KTlx+wPsqtvDPu3CJ9ernEA==
+    size: 52949449
+path: ITSupportApp-Setup-0.2.3.exe
+sha512: PWNFHqa4uDuzsXaMnGV/hWxYnN/KFdmh/FZAExlzWNU5uy9bTW0x9Kyd3U5sJh8KTlx+wPsqtvDPu3CJ9ernEA==
+releaseDate: '2020-05-20T10:29:56.034Z'
