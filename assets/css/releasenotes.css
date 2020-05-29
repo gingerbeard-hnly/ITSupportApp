@@ -1,0 +1,20 @@
+ul.list{
+  list-style-type: square;
+}
+
+p.heading{
+  font-weight: bolder;
+  text-align: left;
+}
+div.Details{
+  font-weight: normal;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 12px;
+}
+p.version{
+  color: #004482;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+}

@@ -1,0 +1,22 @@
+Release Notes
+
+Version: 0.2.3
+
+New Features
+
+- Smart Bar button on home screen
+- Version release notes added to build
+- Call Service Desk shows regional numbers and auto call local number based on timezone defaulting to Australia if not in recognised timezone
+- On demand dev tool for debugging
+- Packaged for deployable installer
+
+Improvements
+
+- Removed Zoom app button (replaced with Smart Bar)
+- Added (VPN) to Global Protect button
+- Protocol URL:Callto and URL:MailTo need to be defined via GPO to Teams/Skype and Outlook
+- Screen capture uses Snip & Sketch instead of Snipping Tool
+
+Fixes
+
+- No fixes required for this release

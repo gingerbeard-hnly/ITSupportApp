@@ -1,0 +1,8 @@
+directories:
+  output: dist
+  buildResources: build
+appId: com.github.gingerbeard-hnly.ITSupportApp
+win:
+  target: nsis
+  icon: assets/icons/win/logo.ico
+electronVersion: 8.3.0

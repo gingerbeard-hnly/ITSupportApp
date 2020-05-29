@@ -30,6 +30,14 @@ header {
   background-color: #245888;
 }
 
+.releasenotes {
+    cursor: pointer;
+}
+.releasenotes:hover {
+    text-decoration: underline;
+}
+
+
 a:link {
   color: white;
 }
