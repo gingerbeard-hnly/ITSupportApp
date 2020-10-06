@@ -14,7 +14,7 @@
   "author": "Aristocrat IT",
   "license": "UNLICENSED",
   "devDependencies": {
-    "electron": "^8.3.0",
+    "electron": "^8.5.2",
     "electron-builder": "^22.6.0"
   },
   "dependencies": {
